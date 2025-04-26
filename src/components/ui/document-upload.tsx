@@ -95,9 +95,11 @@ const DocumentUpload = ({
   
   return (
     <div
-      className={`relative flex flex-col items-center justify-center w-full min-h-[300px] p-6 border-2 ${
-        isDragging ? 'border-primary border-dashed bg-primary-50' : 'border-dashed border-gray-300'
-      } rounded-lg transition-colors`}
+      className={`relative flex flex-col items-center justify-center w-full min-h-[300px] p-6 border-2 transition-all duration-150 ${
+        isDragging 
+          ? 'border-primary border-dashed bg-primary-50 shadow-lg' 
+          : 'border-dashed border-gray-300 hover:border-primary-300 hover:bg-primary-50/20'
+      } rounded-lg`}
       onDragEnter={handleDragEnter}
       onDragLeave={handleDragLeave}
       onDragOver={handleDragOver}
@@ -112,8 +114,8 @@ const DocumentUpload = ({
       />
       
       <div className="flex flex-col items-center text-center">
-        <div className="mb-4 p-4 rounded-full bg-primary-50">
-          <Upload className="h-8 w-8 text-primary" />
+        <div className="mb-4 p-4 rounded-full bg-primary-50 text-primary">
+          <Upload className="h-8 w-8" />
         </div>
         <h3 className="mb-2 text-xl font-semibold">Upload document</h3>
         <p className="mb-6 text-sm text-gray-500">
@@ -122,7 +124,7 @@ const DocumentUpload = ({
         
         <Button 
           onClick={handleButtonClick}
-          className="bg-primary hover:bg-primary-600 text-lg py-6 px-8"
+          className="bg-primary hover:bg-primary-600 text-lg py-6 px-8 transition-all duration-150 transform hover:scale-[1.02]"
         >
           Select document
         </Button>
@@ -135,7 +137,7 @@ const DocumentUpload = ({
           <Button 
             variant="outline" 
             onClick={handleScanDocument} 
-            className="mt-6"
+            className="mt-6 transition-colors duration-150 hover:bg-primary-50"
           >
             <Camera className="mr-2 h-4 w-4" />
             Scan with camera

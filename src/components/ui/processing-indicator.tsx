@@ -37,7 +37,7 @@ const ProcessingIndicator = ({
           </div>
         )}
       </div>
-      <p className="text-lg font-medium">{message}</p>
+      <p className="text-lg font-medium text-gray-700">{message}</p>
     </div>
   );
 };

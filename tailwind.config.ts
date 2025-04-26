@@ -26,21 +26,21 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#E74C3C',
+					DEFAULT: '#3E8EDE',
 					foreground: '#FFFFFF',
-					50: '#FDEDEB',
-					100: '#F9D1CC',
-					200: '#F5B4AB',
-					300: '#F1978A',
-					400: '#ED7A69',
-					500: '#E74C3C',
-					600: '#D52A18',
-					700: '#A92113',
-					800: '#7C180F',
-					900: '#4F100A',
+					50: '#F0F4FF',
+					100: '#D1E3FF',
+					200: '#A3C7FF',
+					300: '#75ABFF',
+					400: '#478FFC',
+					500: '#3E8EDE',
+					600: '#3678C2',
+					700: '#2D62A6',
+					800: '#244C8A',
+					900: '#1E3A8A',
 				},
 				secondary: {
-					DEFAULT: '#EBF5FB',
+					DEFAULT: '#F0F4FF',
 					foreground: '#1F2937',
 				},
 				destructive: {
@@ -52,7 +52,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: '#2563EB',
+					DEFAULT: '#1E3A8A',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
 				popover: {
@@ -113,6 +113,29 @@ export default {
 					'50%': {
 						opacity: '.5'
 					}
+				},
+				'scale-in': {
+					'0%': {
+						transform: 'scale(0.95)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
+				},
+				'check-animation': {
+					'0%': {
+						transform: 'scale(0)',
+						opacity: '0'
+					},
+					'50%': {
+						transform: 'scale(1.1)',
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
@@ -120,8 +143,17 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.3s ease-out',
 				'spin': 'spin 1.5s linear infinite',
-				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+				'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'scale-in': 'scale-in 0.15s ease-out',
+				'check-animation': 'check-animation 0.5s ease-out'
 			},
+			boxShadow: {
+				'card': '0px 1px 3px rgba(0,0,0,0.1)',
+				'card-hover': '0px 4px 8px rgba(0,0,0,0.12)',
+			},
+			transitionTimingFunction: {
+				'custom-ease': 'cubic-bezier(0.4, 0, 0.2, 1)',
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
