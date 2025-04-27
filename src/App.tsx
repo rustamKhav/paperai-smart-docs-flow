@@ -9,6 +9,8 @@ import Scan from "./pages/Scan";
 import Translate from "./pages/Translate";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import Templates from "./pages/Templates";
+import Storage from "./pages/Storage";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/scan" element={<Scan />} />
           <Route path="/translate" element={<Translate />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/templates" element={<Templates />} />
+          <Route path="/storage" element={<Storage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

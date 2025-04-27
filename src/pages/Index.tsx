@@ -18,7 +18,7 @@ const Index = () => {
               Kill paperwork with AI
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-              Upload documents, get instant translations, auto-fill forms, and organize your paperwork efficiently with our AI-powered document management system.
+              Upload documents, get instant translations, and say goodbye to manual form-filling. Paper AI handles it all.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
               <Link to="/scan">
@@ -39,7 +39,7 @@ const Index = () => {
         {/* Features section */}
         <section className="py-16 bg-white">
           <div className="container px-4 mx-auto md:px-6">
-            <h2 className="text-3xl font-bold text-center">How PaperAI works</h2>
+            <h2 className="text-3xl font-bold text-center">How Paper AI works</h2>
             
             <div className="grid grid-cols-1 gap-12 mt-16 md:grid-cols-2 lg:grid-cols-4">
               <div className="flex flex-col items-center text-center">
@@ -48,7 +48,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold">Upload</h3>
                 <p className="mt-2 text-gray-600">
-                  Upload or scan your documents in various formats including PDF, DOC, JPG.
+                  Upload or scan any document in seconds.
                 </p>
               </div>
               
@@ -58,7 +58,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold">Translate</h3>
                 <p className="mt-2 text-gray-600">
-                  Our AI translates your documents to your preferred language instantly.
+                  AI translates to your language instantly.
                 </p>
               </div>
               
@@ -68,7 +68,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold">Auto-fill</h3>
                 <p className="mt-2 text-gray-600">
-                  Let AI extract data and auto-fill forms to save time and reduce errors.
+                  Let AI extract data and complete forms.
                 </p>
               </div>
               
@@ -78,7 +78,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-xl font-semibold">Download & Organize</h3>
                 <p className="mt-2 text-gray-600">
-                  Download processed documents or organize them in your secure account.
+                  Get processed documents organized instantly.
                 </p>
               </div>
             </div>
@@ -91,7 +91,7 @@ const Index = () => {
             <div className="flex flex-col items-center text-center">
               <h2 className="text-3xl font-bold">Ready to simplify your paperwork?</h2>
               <p className="mt-4 text-lg text-gray-600 max-w-2xl">
-                Join thousands of expats, students, and professionals who are saving time and reducing stress with PaperAI.
+                Join thousands who save time and reduce stress with Paper AI.
               </p>
               <Link to="/scan" className="mt-8">
                 <Button className="bg-primary hover:bg-primary-600 text-lg py-6 px-8">
@@ -108,20 +108,25 @@ const Index = () => {
             <div className="p-8 bg-blue-50 rounded-lg">
               <h3 className="text-xl font-semibold text-center mb-4">Secure. Private. In your control.</h3>
               <p className="text-center text-gray-600">
-                Your documents are securely processed with no storage, no tracking, and complete privacy.
-                Files are automatically deleted after processing.
+                Your documents are processed with no storage, no tracking, and complete privacy.
               </p>
               <div className="flex justify-center gap-8 mt-6">
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-3"></div>
+                  <div className="w-12 h-12 bg-white rounded-full mr-3 flex items-center justify-center">
+                    <span className="text-lg">🔒</span>
+                  </div>
                   <span className="text-sm">ISO 27001</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-3"></div>
+                  <div className="w-12 h-12 bg-white rounded-full mr-3 flex items-center justify-center">
+                    <span className="text-lg">🛡️</span>
+                  </div>
                   <span className="text-sm">GDPR Compliant</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-3"></div>
+                  <div className="w-12 h-12 bg-white rounded-full mr-3 flex items-center justify-center">
+                    <span className="text-lg">🔐</span>
+                  </div>
                   <span className="text-sm">Secure Processing</span>
                 </div>
               </div>

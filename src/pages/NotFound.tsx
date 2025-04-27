@@ -23,8 +23,9 @@ const NotFound = () => {
       <main className="flex-grow container px-4 py-16 mx-auto flex items-center justify-center md:py-24">
         <div className="max-w-md mx-auto text-center">
           <h1 className="text-6xl font-bold text-gray-900 mb-4">404</h1>
+          <h2 className="text-2xl font-semibold mb-6">Page Not Found</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Oops! We couldn't find the page you're looking for.
+            Well, this is awkward.
           </p>
           <Link to="/">
             <Button className="bg-primary hover:bg-primary-600">
