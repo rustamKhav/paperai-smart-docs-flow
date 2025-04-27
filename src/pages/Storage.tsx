@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -6,18 +5,64 @@ import { Download, Share } from "lucide-react";
 import { format } from "date-fns";
 
 // Mock data for documents
-const documents = Array.from({ length: 8 }).map((_, i) => {
-  const date = new Date();
-  date.setDate(date.getDate() - Math.floor(Math.random() * 30));
-  
-  return {
-    id: `doc-${i}`,
-    name: `Document ${i + 1}.pdf`,
-    type: i % 3 === 0 ? "pdf" : i % 3 === 1 ? "doc" : "jpg",
-    size: Math.floor(Math.random() * 5 + 1) * 1024, // KB
-    modifiedDate: date,
-  };
-});
+const documents = [
+  {
+    id: 'doc-1',
+    name: 'Tax_Return_2024.pdf',
+    type: 'pdf',
+    size: 2048,
+    modifiedDate: new Date('2024-03-15'),
+  },
+  {
+    id: 'doc-2',
+    name: 'Rental_Agreement_Apartment.pdf',
+    type: 'pdf',
+    size: 3072,
+    modifiedDate: new Date('2024-03-10'),
+  },
+  {
+    id: 'doc-3',
+    name: 'Health_Insurance_Form.pdf',
+    type: 'pdf',
+    size: 1536,
+    modifiedDate: new Date('2024-03-05'),
+  },
+  {
+    id: 'doc-4',
+    name: 'Work_Contract_2023.pdf',
+    type: 'pdf',
+    size: 2560,
+    modifiedDate: new Date('2024-02-28'),
+  },
+  {
+    id: 'doc-5',
+    name: 'Passport_Application.pdf',
+    type: 'pdf',
+    size: 1024,
+    modifiedDate: new Date('2024-02-20'),
+  },
+  {
+    id: 'doc-6',
+    name: 'Birth_Certificate_Copy.pdf',
+    type: 'pdf',
+    size: 768,
+    modifiedDate: new Date('2024-02-15'),
+  },
+  {
+    id: 'doc-7',
+    name: 'Driver_License_Renewal.pdf',
+    type: 'pdf',
+    size: 1280,
+    modifiedDate: new Date('2024-02-10'),
+  },
+  {
+    id: 'doc-8',
+    name: 'Bank_Statement_March.pdf',
+    type: 'pdf',
+    size: 1792,
+    modifiedDate: new Date('2024-03-01'),
+  },
+];
 
 const Storage = () => {
   return (

@@ -17,13 +17,14 @@ const Header = () => {
   
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b shadow-sm">
-      <div className="container flex items-center justify-between h-16 px-4 mx-auto md:px-6">
+      <div className="container flex items-center justify-between h-14 px-4 mx-auto md:px-6">
         <Link 
           to="/" 
-          className="flex items-center"
+          className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity"
           onClick={handleLogoClick}
         >
-          <img src="/paperai-logo.svg" alt="Paper AI" className="h-10 transition-transform duration-150 hover:scale-105" />
+          <span className="text-2xl">📄</span>
+          <span className="font-semibold">Paper AI</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-6">

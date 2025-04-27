@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
@@ -81,7 +80,7 @@ const Scan = () => {
         
         {currentStep === "processing" && (
           <div className="max-w-md mx-auto text-center">
-            <img src="/paperai-logo.svg" alt="PaperAI" className="h-10 mx-auto mb-8" />
+            <div className="text-3xl mb-8">📄</div>
             <ProcessingIndicator 
               message="Processing document..."
               progress={processingProgress}
@@ -161,33 +160,7 @@ const Scan = () => {
               </div>
             </div>
             
-            <div className="mt-12 p-6 bg-primary-50 rounded-lg text-center">
-              <h3 className="font-semibold mb-2">Secure. Private. In your control.</h3>
-              <p className="text-gray-600 text-sm">
-                Your document has been securely processed with no storage, no tracking, and complete privacy.
-                The file will be automatically deleted after 2 hours.
-              </p>
-              <div className="flex justify-center gap-8 mt-6">
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-white rounded-full mr-3 flex items-center justify-center">
-                    <span className="text-xs font-medium text-primary">ISO</span>
-                  </div>
-                  <span className="text-sm">ISO 27001</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-white rounded-full mr-3 flex items-center justify-center">
-                    <span className="text-xs font-medium text-primary">GDPR</span>
-                  </div>
-                  <span className="text-sm">GDPR Compliant</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-white rounded-full mr-3 flex items-center justify-center">
-                    <span className="text-xs font-medium text-primary">SEC</span>
-                  </div>
-                  <span className="text-sm">Secure Processing</span>
-                </div>
-              </div>
-            </div>
+            
           </div>
         )}
       </main>

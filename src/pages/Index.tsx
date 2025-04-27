@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/layout/Header";
@@ -18,7 +17,7 @@ const Index = () => {
               Kill paperwork with AI
             </h1>
             <p className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-              Upload documents, get instant translations, and say goodbye to manual form-filling. Paper AI handles it all.
+              Upload documents, get instant translations, and say goodbye to manual form-filling.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
               <Link to="/scan">
@@ -36,50 +35,64 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Features section */}
+        {/* Features section with hover effects */}
         <section className="py-16 bg-white">
           <div className="container px-4 mx-auto md:px-6">
             <h2 className="text-3xl font-bold text-center">How Paper AI works</h2>
             
             <div className="grid grid-cols-1 gap-12 mt-16 md:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col items-center text-center">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4">
-                  <Upload className="h-8 w-8 text-primary" />
+              <div className="feature-icon group cursor-pointer">
+                <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4 group-hover:brightness-95">
+                    <span className="text-3xl">📤</span>
+                  </div>
+                  <h3 className="text-xl font-semibold">Upload</h3>
+                  <p className="mt-2 text-gray-600">
+                    Upload or scan any document in seconds.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Upload</h3>
-                <p className="mt-2 text-gray-600">
-                  Upload or scan any document in seconds.
-                </p>
               </div>
               
-              <div className="flex flex-col items-center text-center">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4">
-                  <Scan className="h-8 w-8 text-primary" />
+              <div className="feature-icon group cursor-pointer">
+                <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4 group-hover:brightness-95">
+                    <span className="text-3xl"> 	
+                      <Scan className="h-8 w-8 text-primary" />
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold">Translate</h3>
+                  <p className="mt-2 text-gray-600">
+                    AI translates to your language instantly.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Translate</h3>
-                <p className="mt-2 text-gray-600">
-                  AI translates to your language instantly.
-                </p>
               </div>
               
-              <div className="flex flex-col items-center text-center">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4">
-                  <File className="h-8 w-8 text-primary" />
+              <div className="feature-icon group cursor-pointer">
+                <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4 group-hover:brightness-95">
+                    <span className="text-3xl">
+                      <File className="h-8 w-8 text-primary" />
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold">Auto-fill</h3>
+                  <p className="mt-2 text-gray-600">
+                    Let AI extract data and complete forms.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Auto-fill</h3>
-                <p className="mt-2 text-gray-600">
-                  Let AI extract data and complete forms.
-                </p>
               </div>
               
-              <div className="flex flex-col items-center text-center">
-                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4">
-                  <Download className="h-8 w-8 text-primary" />
+              <div className="feature-icon group cursor-pointer">
+                <div className="flex flex-col items-center text-center transition-transform duration-200 hover:scale-105">
+                  <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary-50 mb-4 group-hover:brightness-95">
+                    <span className="text-3xl">
+                      <Download className="h-8 w-8 text-primary" />
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-semibold">Download & Organize</h3>
+                  <p className="mt-2 text-gray-600">
+                    Get processed documents organized instantly.
+                  </p>
                 </div>
-                <h3 className="text-xl font-semibold">Download & Organize</h3>
-                <p className="mt-2 text-gray-600">
-                  Get processed documents organized instantly.
-                </p>
               </div>
             </div>
           </div>
